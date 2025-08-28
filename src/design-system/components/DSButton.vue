@@ -16,50 +16,6 @@
       {{ props.label }}
     </template>
   </Button>
-</template>
-
-<script setup lang="ts">
-import { computed } from 'vue'
-import Button from 'primevue/button'
-
-export interface DSButtonProps {
-  severity?: 'primary' | 'secondary' | 'success' | 'info' | 'warning' | 'danger' | 'contrast' | 'help'
-  size?: 'small' | 'medium' | 'large'
-  disabled?: boolean
-  loading?: boolean
-  label?: string
-  icon?: string
-  iconPos?: 'left' | 'right' | 'top' | 'bottom'
-  text?: boolean
-}
-
-const props = withDefaults(defineProps<DSButtonProps>(), {
-  severity: 'primary',
-  size: 'medium',
-  disabled: false,
-  loading: false,
-  iconPos: 'left',
-  text: false
-})
-
-const computedClasses = computed(() => {
-  const classes = ['ds-button']
-  
-  // Size classes
-  switch (props.size) {
-    case 'small':
-      classes.push('ds-button--small')
-      break
-    case 'large':
-      classes.push('ds-button--large')
-      break
-    default:
-      classes.push('ds-button--medium')
-  }
-  
-  return classes.join(' ')
-})
-</script>
 
 <style scoped>
 .ds-button {
