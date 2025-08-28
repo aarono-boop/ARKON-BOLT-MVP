@@ -20,7 +20,7 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { Button } from 'primevue/button'
+import Button from 'primevue/button'
 
 export interface DSButtonProps {
   label?: string
