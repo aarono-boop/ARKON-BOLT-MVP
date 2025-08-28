@@ -55,7 +55,7 @@
           <!-- Upgrade Button -->
           <DSButton
             label="Upgrade to Pro"
-variant="primary"
+            severity="primary"
             size="large"
             class="w-full font-medium"
             @click="handleUpgrade"

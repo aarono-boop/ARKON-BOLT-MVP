@@ -58,7 +58,7 @@
           
           <DSButton
             type="submit"
-            variant="primary"
+            severity="primary"
             size="large"
             class="w-full flex items-center justify-center gap-2 mt-2"
             :disabled="!email || !password"

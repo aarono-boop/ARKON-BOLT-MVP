@@ -40,6 +40,12 @@ export const customTheme = definePreset(Aura, {
           hoverColor: colors.primary[300],
           activeColor: colors.primary[200]
         },
+        secondary: {
+          color: colors.background.secondary,
+          inverseColor: colors.text.primary,
+          hoverColor: colors.background.tertiary,
+          activeColor: colors.background.tertiary
+        },
         highlight: {
           background: colors.primary[500],
           focusBackground: colors.primary[400],
@@ -69,7 +75,52 @@ export const customTheme = definePreset(Aura, {
         paddingX: '0.75rem',
         paddingY: '0.5rem',
         fontSize: '1rem',
-        transition: 'all 0.5s ease-in-out'
+        transition: 'all 0.5s ease-in-out',
+        fontWeight: '500'
+      },
+      colorScheme: {
+        dark: {
+          root: {
+            primary: {
+              background: colors.primary[500],
+              hoverBackground: colors.primary[600],
+              activeBackground: colors.primary[700],
+              borderColor: colors.primary[500],
+              hoverBorderColor: colors.primary[600],
+              activeBorderColor: colors.primary[700],
+              color: colors.text.primary,
+              hoverColor: colors.text.primary,
+              activeColor: colors.text.primary
+            },
+            secondary: {
+              background: colors.background.secondary,
+              hoverBackground: colors.background.tertiary,
+              activeBackground: colors.background.tertiary,
+              borderColor: 'rgba(255, 255, 255, 0.3)',
+              hoverBorderColor: 'rgba(255, 255, 255, 0.4)',
+              activeBorderColor: 'rgba(255, 255, 255, 0.4)',
+              color: colors.text.primary,
+              hoverColor: colors.text.primary,
+              activeColor: colors.text.primary
+            }
+          },
+          text: {
+            primary: {
+              hoverBackground: colors.primary[500],
+              activeBackground: colors.primary[600],
+              color: colors.text.primary,
+              hoverColor: colors.text.primary,
+              activeColor: colors.text.primary
+            },
+            secondary: {
+              hoverBackground: colors.background.secondary,
+              activeBackground: colors.background.tertiary,
+              color: colors.text.primary,
+              hoverColor: colors.text.primary,
+              activeColor: colors.text.primary
+            }
+          }
+        }
       },
       icon: {
         size: '1rem'

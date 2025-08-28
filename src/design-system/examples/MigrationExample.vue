@@ -22,9 +22,9 @@
       <h3>✅ After (Design System)</h3>
       
       <div class="button-group">
-        <DSButton variant="primary">Save Changes</DSButton>
-        <DSButton variant="secondary">Cancel</DSButton>
-        <DSButton variant="tertiary">Reset</DSButton>
+        <DSButton severity="primary">Save Changes</DSButton>
+        <DSButton severity="secondary">Cancel</DSButton>
+        <DSButton text severity="secondary">Reset</DSButton>
       </div>
       
       <DSCard 
@@ -52,8 +52,8 @@
         
         <template #footer>
           <div class="card-actions">
-            <DSButton variant="primary" size="small">Update Profile</DSButton>
-            <DSButton variant="tertiary" size="small">Reset Form</DSButton>
+            <DSButton severity="primary" size="small">Update Profile</DSButton>
+            <DSButton text severity="secondary" size="small">Reset Form</DSButton>
           </div>
         </template>
       </DSCard>

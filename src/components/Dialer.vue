@@ -31,7 +31,7 @@
           @click="pauseQueue"
           :disabled="callState === 'connected' || callState === 'ringing'"
           tabindex="8"
-          variant="secondary"
+          severity="secondary"
           size="small"
           label="Pause Queue"
           style="flex-shrink: 0; position: relative;"
@@ -144,7 +144,7 @@
             @keydown="handleMuteKeydown"
             tabindex="9"
             :disabled="callState === 'idle'"
-            :variant="isMuted ? 'error' : 'secondary'"
+            :severity="isMuted ? 'danger' : 'secondary'"
             class="flex flex-col items-center justify-center gap-1 py-3"
           >
             <i class="pi pi-microphone-slash" v-if="isMuted"></i>
@@ -157,7 +157,7 @@
             @click="showKeypad"
             tabindex="10"
             :disabled="callState === 'idle'"
-            variant="secondary"
+            severity="secondary"
             class="flex flex-col items-center justify-center gap-1 py-3"
           >
             <i class="pi pi-th"></i>
@@ -170,7 +170,7 @@
             @keydown="handleHoldKeydown"
             tabindex="11"
             :disabled="callState === 'idle'"
-            :variant="isOnHold ? 'warning' : 'secondary'"
+            :severity="isOnHold ? 'warning' : 'secondary'"
             class="flex flex-col items-center justify-center gap-1 py-3"
           >
             <i class="pi pi-pause"></i>
@@ -184,7 +184,7 @@
           @keydown.tab="handleHangUpTab"
           tabindex="12"
           :disabled="callState === 'idle'"
-          variant="error"
+          severity="danger"
           class="w-full flex items-center justify-center gap-2 py-3"
         >
           <i class="pi pi-phone" style="transform: rotate(135deg);"></i>
@@ -197,7 +197,7 @@
         <DSButton
           @click="callBack"
           tabindex="13"
-          variant="secondary"
+          severity="secondary"
           class="w-full flex items-center justify-center gap-2 py-3"
         >
           <i class="pi pi-phone"></i>
@@ -209,7 +209,7 @@
           @keydown.tab="handleNextContactTab"
           tabindex="14"
           :disabled="shouldCompleteQueue ? !dispositionSet : (callState === 'ended' && !dispositionSet)"
-          :variant="shouldCompleteQueue ? (dispositionSet ? 'primary' : 'secondary') : dispositionSet ? 'primary' : 'secondary'"
+          :severity="shouldCompleteQueue ? (dispositionSet ? 'primary' : 'secondary') : dispositionSet ? 'primary' : 'secondary'"
           class="w-full flex items-center justify-center gap-2 py-3"
         >
           <i :class="shouldCompleteQueue ? 'pi pi-check' : 'pi pi-arrow-right'"></i>

@@ -128,7 +128,7 @@
       <section class="text-center">
         <DSButton
           label="Get Started with ARKON"
-          variant="primary"
+          severity="primary"
           size="large"
           class="px-8 py-4 font-semibold text-lg"
           @click="$emit('go-to-app')"

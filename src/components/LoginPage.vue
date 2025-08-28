@@ -14,7 +14,7 @@
         <DSButton
           @click="$emit('google-signin')"
           @keydown.tab="handleTabKey"
-          variant="primary"
+          severity="primary"
           size="large"
           class="w-full flex items-center justify-center gap-3 font-semibold text-lg mb-6"
           tabindex="4"

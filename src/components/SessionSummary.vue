@@ -4,7 +4,7 @@
       <!-- Header -->
       <div class="flex items-center justify-between mb-6">
         <h2 class="text-white text-2xl font-bold">Queue Paused!</h2>
-        <DSButton @click="$emit('close')" variant="tertiary" size="small">
+        <DSButton @click="$emit('close')" text severity="secondary" size="small">
           <i class="pi pi-times text-xl"></i>
         </DSButton>
       </div>
@@ -105,7 +105,7 @@
       <div v-if="isQueueComplete" class="flex justify-center">
         <DSButton
           @click="$emit('trigger-file-upload')"
-          variant="secondary"
+          severity="secondary"
           size="large"
           label="Load New File"
         />
@@ -113,14 +113,14 @@
       <div v-else class="flex gap-4">
         <DSButton
           @click="$emit('continue-queue')"
-          variant="primary"
+          severity="primary"
           size="large"
           class="flex-1"
           label="Continue Call Queue"
         />
         <DSButton
           @click="$emit('trigger-file-upload')"
-          variant="secondary"
+          severity="secondary"
           size="large"
           class="flex-1"
           label="Export Enriched File"
