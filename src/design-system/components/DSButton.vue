@@ -16,6 +16,7 @@
       {{ props.label }}
     </template>
   </Button>
+</template>
 
 <style scoped>
 .ds-button {
