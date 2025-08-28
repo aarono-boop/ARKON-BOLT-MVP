@@ -175,7 +175,7 @@
             <!-- Purchase Button -->
             <DSButton
               label="Purchase"
-              severity="primary"
+              variant="primary"
               size="large"
               class="w-full mt-6 py-4 bg-purple-600 hover:bg-purple-700 text-white rounded-lg font-medium text-lg transition-all duration-200"
               @click="handlePurchase"

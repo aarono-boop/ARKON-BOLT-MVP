@@ -5,7 +5,7 @@
         v-for="(action, index) in actions"
         :key="action"
         :label="action"
-        severity="secondary"
+        variant="secondary"
         class="px-4 py-3.5 font-medium text-sm text-center min-h-[48px] flex items-center justify-center"
         @click="$emit('action-selected', action)"
         :tabindex="3 + index"

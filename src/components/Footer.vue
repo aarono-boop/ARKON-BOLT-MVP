@@ -8,8 +8,7 @@
       <DSButton
         v-if="!showDialer && !queuePaused"
         @click="$emit('skip-to-dialer')"
-        text
-        severity="secondary"
+        variant="tertiary"
         size="small"
         class="ml-4 underline"
         label="Skip to Dialer"

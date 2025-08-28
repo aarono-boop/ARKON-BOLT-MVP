@@ -13,7 +13,7 @@
         <DSButton
           @click="$emit('google-signup')"
           @keydown.tab="handleTabKey"
-          severity="primary"
+          variant="primary"
           size="large"
           class="w-full flex items-center justify-center gap-3 font-semibold text-lg mb-6"
           tabindex="4"

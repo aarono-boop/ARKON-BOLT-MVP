@@ -4,7 +4,7 @@
       <!-- Header -->
       <div class="flex items-center justify-between mb-6">
         <h2 class="text-white text-xl font-semibold">Log in</h2>
-        <DSButton @click="$emit('close')" text severity="secondary" size="small">
+        <DSButton @click="$emit('close')" variant="tertiary" size="small">
           <i class="pi pi-times text-lg"></i>
         </DSButton>
       </div>
@@ -12,7 +12,7 @@
       <!-- Google Sign In -->
       <DSButton
         @click="$emit('google-signin')"
-        severity="secondary"
+        variant="secondary"
         size="large"
         class="w-full flex items-center justify-center gap-3 mb-6"
       >
@@ -56,7 +56,7 @@
       <DSButton
         @click="handleLogin"
         :disabled="!email || !password"
-        severity="primary"
+        variant="primary"
         size="large"
         class="w-full mb-4"
         label="Log in"
